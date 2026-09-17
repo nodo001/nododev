@@ -81,7 +81,7 @@ reveal();
         floreria: { nombre: 'Florería', archivos: ['Floreria1', 'Floreria2', 'Floreria3'] },
         yates: { nombre: 'Yates', archivos: ['Yates1', 'Yates2', 'Yates3', 'Yates4', 'Yates5'] },
         imprenta: { nombre: 'Imprenta', archivos: ['Imprenta1', 'Imprenta2', 'Imprenta3', 'Imprenta4', 'Imprenta5', 'Imprenta6'] },
-        Bazar: { nombre: 'Bazar', archivos: ['Bazar1', 'Bazar2', 'Bazar3', 'Bazar4', 'Bazar5', 'Bazar6', 'Bazar7'] }
+        Bazar: { nombre: 'Bazar', archivos: ['Bazar1', 'Bazar2', 'Bazar3', 'Bazar4', 'Bazar5', 'Bazar6', 'Bazar7'] },
     };
     var orden = ['floreria', 'yates', 'imprenta', 'Bazar'];
 
