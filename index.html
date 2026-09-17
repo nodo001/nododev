@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Nodo: Ingeniería digital. Desarrollo de software y sistemas.">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="img/icono.png" type="image/png">
+    <title>Nodo </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="loading">
+
+    <div id="loader" class="loader" aria-hidden="true">
+        <div class="loader-mark">
+            <img src="img/icono.png" alt="" class="loader-icon" id="loaderIcon">
+            <span class="loader-word" id="loaderWord">NODO</span>
+        </div>
+        <div class="loader-bar" id="loaderBar"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="container nav-content">
+            <a class="logo-container" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <img src="img/logo.png" alt="Logotipo Nodo" class="logo-img">
+            </a>
+            <button class="menu-trigger" onclick="toggleMenu()">
+                <span class="menu-text">MENÚ</span>
+                <i class="fa-solid fa-bars-staggered"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div id="overlay" class="overlay" onclick="toggleMenu()"></div>
+
+    <aside id="sidebar" class="sidebar">
+        <div class="sidebar-header">
+            <span class="sidebar-title">Navegación</span>
+            <button class="close-btn" onclick="toggleMenu()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+        </div>
+        <ul class="sidebar-links">
+            <li><a onclick="navegar('inicio')">Inicio</a></li>
+            <li><a onclick="navegar('servicio')">Mi Servicio</a></li>
+            <li><a onclick="navegar('trabajos')">Trabajos</a></li>
+            <li><a onclick="navegar('enfoque')">Enfoque</a></li>
+            <li><a onclick="navegar('contacto')">Contacto</a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <p>Ingeniería Nodo.</p>
+        </div>
+    </aside>
+
+    <main>
+        <header class="hero">
+            <div class="container hero-content">
+                <div class="hero-main">
+                    <span class="hero-tag">Desarrollo Web</span>
+                    <h1>Diseño la página web <br> que <span class="text-white">tu negocio necesita.</span></h1>
+                    <p class="hero-description">
+                        En Nodo diseño y desarrollo tu página web desde cero: profesional, rápida y adaptada a lo que tu negocio realmente necesita.
+                    </p>
+                    <div class="cta-group">
+                        <a class="btn-primary" onclick="scrollToSection('contacto')">Iniciar Proyecto</a>
+                    </div>
+                </div>
+                <div class="hero-panel" id="heroPanel">
+                    <div class="device-2d" id="device2d">
+                        <div class="laptop-2d">
+                            <div class="screen-face">
+                                <div class="screen-topbar">
+                                    <span></span><span></span><span></span>
+                                </div>
+                                <div class="screen-content">
+                                    <div class="ui-block title"></div>
+                                    <div class="ui-block line w-full"></div>
+                                    <div class="ui-block line w-mid"></div>
+                                    <div class="ui-cards">
+                                        <div class="ui-card"></div>
+                                        <div class="ui-card"></div>
+                                        <div class="ui-card"></div>
+                                    </div>
+                                    <div class="ui-block pulse-accent cta"></div>
+                                </div>
+                            </div>
+                            <div class="laptop-base"></div>
+                        </div>
+                        <div class="phone-2d">
+                            <div class="phone-notch"></div>
+                            <div class="phone-content">
+                                <div class="ui-block title-sm"></div>
+                                <div class="ui-block line-sm w-full"></div>
+                                <div class="ui-block line-sm w-mid"></div>
+                                <div class="ui-card phone-card"></div>
+                                <div class="ui-block pulse-accent cta-sm"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section id="servicio" class="services-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="index-tag">01</span>
+                    <div class="section-header-text">
+                        <h2>Mi Servicio</h2>
+                        <p>Soluciones digitales fáciles de entender y de usar.</p>
+                    </div>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card reveal">
+                        <div class="card-top">
+                            <div class="icon-box"><i class="fa-solid fa-laptop-code"></i></div>
+                            <span class="card-number">N.01</span>
+                        </div>
+                        <h3>Sitio Web Corporativo</h3>
+                        <p>Diseños profesionales hechos desde cero y adaptados a los requerimientos de tu negocio, para que tus clientes encuentren tu información fácilmente.</p>
+                    </article>
+                    <article class="service-card reveal">
+                        <div class="card-top">
+                            <div class="icon-box"><i class="fa-solid fa-database"></i></div>
+                            <span class="card-number">N.02</span>
+                        </div>
+                        <h3>Sistema de Gestión</h3>
+                        <p>Un panel privado y fácil de usar para administrar tu negocio: clientes, inventario y toda tu información en un solo lugar.</p>
+                    </article>
+                    <article class="service-card reveal">
+                        <div class="card-top">
+                            <div class="icon-box"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                            <span class="card-number">N.03</span>
+                        </div>
+                        <h3>Mantenimiento Técnico</h3>
+                        <p>Actualizo el contenido, mejoro la velocidad y corrijo cualquier error de tu página, para que siempre se vea y funcione bien.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="trabajos" class="portfolio-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="index-tag">02</span>
+                    <div class="section-header-text">
+                        <h2>Trabajos Anteriores</h2>
+                        <p>Proyectos reales que he diseñado y desarrollado.</p>
+                    </div>
+                </div>
+
+                <p class="portfolio-hint reveal">Elige un proyecto y recorre sus fotos con las flechas.</p>
+
+                <div class="portfolio-grid reveal" id="portfolioGrid"></div>
+            </div>
+        </section>
+
+        <section id="enfoque" class="focus-section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="index-tag">03</span>
+                    <div class="section-header-text">
+                        <h2>Cómo Trabajo</h2>
+                        <p>La base sobre la que construyo cada proyecto.</p>
+                    </div>
+                </div>
+                <div class="focus-grid">
+                    <div class="focus-item reveal">
+                        <div class="focus-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <div class="focus-content">
+                            <h4>Diseño Claro</h4>
+                            <p>Páginas limpias y ordenadas, fáciles de leer y de navegar, para que cualquier visitante encuentre lo que busca sin complicaciones.</p>
+                        </div>
+                    </div>
+                    <div class="focus-item reveal">
+                        <div class="focus-icon"><i class="fa-solid fa-microchip"></i></div>
+                        <div class="focus-content">
+                            <h4>Adaptado a Ti</h4>
+                            <p>Cada proyecto se construye alrededor de lo que tu negocio realmente necesita, sin funciones de más ni de menos.</p>
+                        </div>
+                    </div>
+                    <div class="focus-item reveal">
+                        <div class="focus-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="focus-content">
+                            <h4>Datos Seguros</h4>
+                            <p>Tu información y la de tus clientes se guarda de forma privada y protegida en todo momento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto" class="footer">
+        <div class="container footer-layout">
+            <div class="footer-brand">
+                <h3>Nodo.</h3>
+                <p>Ingeniería precisa.</p>
+            </div>
+            <div class="footer-contact-block">
+                <h4>Contacto</h4>
+                <a class="footer-link" onclick="abrirLink('https://www.instagram.com/_nodo1/')">
+                    <i class="fa-brands fa-instagram icon"></i>
+                    <span>_nodo1</span>
+                </a>
+                <a class="footer-link gmail-link" onclick="abrirLink('https://mail.google.com/mail/?view=cm&fs=1&to=nodo1.contact@gmail.com')">
+                    <svg class="icon-svg" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 4H4C2.9 4 2.01 4.9 2.01 6L2 18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6C22 4.9 21.1 4 20 4ZM20 8L12 13L4 8V6L12 11L20 6V8Z"/>
+                    </svg>
+                    <span>nodo1.contact@gmail.com</span>
+                </a>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2025 Nodo. Derechos Reservados.
+        </div>
+    </footer>
+
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">&times;</button>
+        <button class="lightbox-prev" id="lightboxPrev" aria-label="Anterior">&#10094;</button>
+        <figure class="lightbox-figure">
+            <img class="lightbox-img" id="lightboxImg" src="" alt="">
+            <figcaption class="lightbox-caption" id="lightboxCaption"></figcaption>
+        </figure>
+        <button class="lightbox-next" id="lightboxNext" aria-label="Siguiente">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
